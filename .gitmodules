@@ -1,7 +1,0 @@
-[submodule "bundle/handlebars"]
-	path = bundle/handlebars
-  url = git://github.com/nono/vim-handlebars.git
-
-[submodule "gmarik/vundle"]
-  path = gmark/vundle
-  url = git://github.com/gmarik/vundle.git
