@@ -1,2 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/usr/local/opt/dnsmasq'
+let g:netrw_dirhist_2='/Users/jon/src/candy/php-talk/3_test_driven_development/2_awful_encryption'
+let g:netrw_dirhist_3='/Users/jon/src/wordpress/wp-content/plugins/webkite-results'
+let g:netrw_dirhist_4='/Users/jon/.rvm/gems/ruby-2.1.0@webkite-results-api/gems/rack-test-0.6.2'
+let g:netrw_dirhist_5='/Users/jon/.rvm/gems/ruby-2.1.0@webkite-results-api/gems/rack-test-0.6.2/lib'
+let g:netrw_dirhist_6='/Users/jon/.rvm/gems/ruby-2.1.0@webkite-results-api/gems/rack-test-0.6.2/lib/rack'
+let g:netrw_dirhist_7='/Users/jon/.rvm/gems/ruby-2.1.0@webkite-results-api/gems/rack-test-0.6.2'
+let g:netrw_dirhist_8='/Users/jon/src/webkite/app/models/theming/palette'
