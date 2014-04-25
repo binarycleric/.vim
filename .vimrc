@@ -30,12 +30,14 @@ syntax on
 
 " only give me powerline, large fonts, etc if I'm using macvim.
 if has('gui_running')
-  set guifont=Consolas\ for\ Powerline:h14
+  set guifont=Menlo\ Regular:h15
   set guioptions=egmrt
 endif
 
 colorscheme solarized
 let g:Powerline_symbols = 'fancy'
+
+let &colorcolumn="80,".join(range(120,999),",")
 
 " backup related stuff
 set autowrite
