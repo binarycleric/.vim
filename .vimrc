@@ -1,6 +1,11 @@
 execute pathogen#infect()
 highlight clear SignColumn
 
+" installed powerline from pip
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 " set number
 set textwidth=80
 set tabstop=2
@@ -13,13 +18,6 @@ set number
 set nocompatible
 filetype off
 
-" set rtp+=~/.vim/bundle/vundle/
-" call vundle#rc()
-" " 
-" " let Vundle manage Vundle
-" " required! 
-" Bundle 'gmarik/vundle'
-
 filetype plugin indent on " required!
 
 set laststatus=2
@@ -30,7 +28,7 @@ syntax on
 
 " only give me powerline, large fonts, etc if I'm using macvim.
 if has('gui_running')
-  set guifont=Menlo\ Regular:h15
+  set guifont=Inconsolata\ for\ Powerline:h16
   set guioptions=egmrt
 endif
 
