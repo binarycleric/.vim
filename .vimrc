@@ -2,6 +2,7 @@ execute pathogen#infect()
 highlight clear SignColumn
 
 " installed powerline from pip
+" pip install --user git+git://github.com/Lokaltog/powerline
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
