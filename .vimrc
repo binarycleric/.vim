@@ -3,9 +3,12 @@ highlight clear SignColumn
 
 " installed powerline from pip
 " pip install --user git+git://github.com/Lokaltog/powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+" python from powerline.vim import setup as powerline_setup
+" python powerline_setup()
+" python del powerline_setup
+
+let g:airline_powerline_fonts = 1
+
 
 " set number
 set textwidth=80
@@ -29,12 +32,12 @@ syntax on
 
 " only give me powerline, large fonts, etc if I'm using macvim.
 if has('gui_running')
-  set guifont=Inconsolata\ for\ Powerline:h16
+  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h16
   set guioptions=egmrt
 endif
 
 colorscheme solarized
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
 
 let &colorcolumn="80,".join(range(120,999),",")
 
