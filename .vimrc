@@ -8,7 +8,18 @@ highlight clear SignColumn
 " python del powerline_setup
 
 let g:airline_powerline_fonts = 1
+let g:bufferline_echo = 0
+let g:airline_detect_whitespace=0
 
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_branch_prefix = '⭠'
+let g:airline_readonly_symbol = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
+
+let g:airline_theme = 'powerlineish'
 
 " set number
 set textwidth=80
@@ -32,9 +43,14 @@ syntax on
 
 " only give me powerline, large fonts, etc if I'm using macvim.
 if has('gui_running')
-  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h16
+  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
   set guioptions=egmrt
 endif
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 colorscheme solarized
 " let g:Powerline_symbols = 'fancy'
