@@ -1,5 +1,6 @@
 execute pathogen#infect()
 highlight clear SignColumn
+highlight SpellBad gui=none
 
 " installed powerline from pip
 " pip install --user git+git://github.com/Lokaltog/powerline
@@ -11,14 +12,35 @@ let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 let g:airline_detect_whitespace=0
 
-let g:airline_left_sep = "\u2b80"
-let g:airline_left_alt_sep = "\u2b81"
-let g:airline_right_sep = "\u2b82"
-let g:airline_right_alt_sep = "\u2b83"
-let g:airline_branch_prefix = "\u2b60"
-let g:airline_readonly_symbol = "\u2b64"
-let g:airline_linecolumn_prefix = "\u2b61"
+let g:airline_left_sep = ""
+let g:airline_left_alt_sep = ""
+let g:airline_right_sep = ""
+let g:airline_right_alt_sep = ""
+let g:airline_branch_prefix = ""
+let g:airline_readonly_symbol = ""
+let g:airline_linecolumn_prefix = ""
 let g:airline_theme = 'powerlineish'
+
+"  Parentheses colours using Solarized
+let g:rbpt_colorpairs = [
+  \ [ '13', '#6c71c4'],
+  \ [ '5',  '#d33682'],
+  \ [ '1',  '#dc322f'],
+  \ [ '9',  '#cb4b16'],
+  \ [ '3',  '#b58900'],
+  \ [ '2',  '#859900'],
+  \ [ '6',  '#2aa198'],
+  \ [ '4',  '#268bd2'],
+  \ ]
+ 
+" Enable rainbow parentheses for all buffers
+augroup rainbow_parentheses
+  au!
+  au VimEnter * RainbowParenthesesActivate
+  au BufEnter * RainbowParenthesesLoadRound
+  au BufEnter * RainbowParenthesesLoadSquare
+  au BufEnter * RainbowParenthesesLoadBraces
+augroup END
 
 " set number
 set textwidth=80
@@ -42,7 +64,7 @@ syntax on
 
 " only give me powerline, large fonts, etc if I'm using macvim.
 if has('gui_running')
-  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
+  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
   set guioptions=egmrt
 endif
 
