@@ -3,4 +3,16 @@
 	url = git@github.com:Lokaltog/powerline-fonts.git
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
-	url = git@github.com:guns/vim-clojure-static.git
+  url = git@github.com:guns/vim-clojure-static.git
+[submodule "bundle/vim-clojure-highlight"]
+	path = bundle/vim-clojure-highlight
+  url = git@github.com:guns/vim-clojure-highlight.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+  url = git@github.com:fatih/vim-go.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+  url = git@github.com:derekwyatt/vim-scala.git
+[submodule "bundle/vim-swift"]
+	path = bundle/vim-swift
+	url = git@github.com:kballard/vim-swift.git
