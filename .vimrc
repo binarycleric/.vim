@@ -50,6 +50,7 @@ set expandtab
 set spell
 set nowrap
 set number
+set cursorline
 
 set nocompatible
 filetype off
