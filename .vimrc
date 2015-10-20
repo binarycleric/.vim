@@ -71,7 +71,7 @@ syntax on
 
 " only give me powerline, large fonts, etc if I'm using macvim.
 if has('gui_running')
-  set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
+  set guifont=Inconsolata\ for\ Powerline:h16
   set guioptions=egmrt
 endif
 
