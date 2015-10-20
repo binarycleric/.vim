@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/jon/.rvm/gems/ruby-1.9.2-p320@pikimal/bundler/gems/unicorn-rails-e5fb8969a24e/lib/unicorn/rails'
-let g:netrw_dirhist_2='/Users/jon/.rvm/gems/ruby-1.9.2-p320@pikimal/bundler/gems/unicorn-rails-e5fb8969a24e/lib/unicorn'
-let g:netrw_dirhist_3='/Users/jon/src/pikimal/app/facades'
-let g:netrw_dirhist_4='/Users/jon/src/pikimal/public/images'
-let g:netrw_dirhist_5='/Users/jon/src/pikimal/app/models/preference_map'
-let g:netrw_dirhist_6='/Users/jon/src/webkite/app/models/theming/domain_style'
-let g:netrw_dirhist_7='/Users/jon/src/jammit/lib/jammit'
