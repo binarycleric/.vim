@@ -21,6 +21,12 @@ let g:airline_readonly_symbol = ""
 let g:airline_linecolumn_prefix = ""
 let g:airline_theme = 'powerlineish'
 
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 "  Parentheses colours using Solarized
 let g:rbpt_colorpairs = [
   \ [ '13', '#6c71c4'],
