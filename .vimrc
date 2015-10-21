@@ -20,7 +20,8 @@ let g:bufferline_echo = 0
 " let g:airline_readonly_symbol = ""
 " let g:airline_linecolumn_prefix = ""
 let g:airline_theme = 'powerlineish'
-let s:default_checks = ['indent']
+let g:airline#extensions#whitespace#checks = ['indent']
+
 let airline#extensions#hunks#non_zero_only = 1
 
 let g:go_highlight_functions = 1
