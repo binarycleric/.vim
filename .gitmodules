@@ -61,3 +61,6 @@
 [submodule "Hack"]
 	path = Hack
 	url = https://github.com/chrissimpkins/Hack.git
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = https://github.com/cespare/vim-toml.git
