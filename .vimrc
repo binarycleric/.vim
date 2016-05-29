@@ -85,19 +85,12 @@ set visualbell t_vb=
 set background=dark
 syntax on
 
-" only give me powerline, large fonts, etc if I'm using macvim.
-if has('gui_running')
-  set guifont=Hack\ Regular:h15
-  set guioptions=egmrt
-endif
-
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
 
 colorscheme solarized
-" let g:Powerline_symbols = 'fancy'
 
 let &colorcolumn="80,".join(range(120,999),",")
 
