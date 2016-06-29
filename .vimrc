@@ -55,6 +55,8 @@ augroup rainbow_parentheses
   au BufEnter * RainbowParenthesesLoadBraces
 augroup END
 
+autocmd FileType ruby autocmd BufWritePre <buffer> %s/\s\+$//e
+
 set nofoldenable
 " set number
 set textwidth=80
