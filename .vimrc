@@ -2,31 +2,36 @@ execute pathogen#infect()
 highlight clear SignColumn
 highlight SpellBad gui=none
 
-" installed powerline from pip
-" pip install --user git+git://github.com/Lokaltog/powerline
-" python from powerline.vim import setup as powerline_setup
-" python powerline_setup()
-" python del powerline_setup
-
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
-" let g:airline_detect_whitespace=0
 
 let g:airline_left_sep = ""
 let g:airline_left_alt_sep = ""
 let g:airline_right_sep = ""
 let g:airline_right_alt_sep = ""
-" let g:airline_branch_prefix = ""
-" let g:airline_readonly_symbol = ""
-" let g:airline_linecolumn_prefix = ""
+let g:airline_branch_prefix = ""
+let g:airline_readonly_symbol = ""
 let g:airline_theme = 'powerlineish'
-let g:airline#extensions#whitespace#checks = ['indent']
 
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.maxlinenr = '☰'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = '∄'
+let g:airline_symbols.whitespace = 'Ξ'
+
+let g:airline#extensions#whitespace#checks = ['indent']
 let airline#extensions#hunks#non_zero_only = 1
 
-let g:airline_section_b = "" 
-let g:airline_section_y = "" 
-" let g:airline_section_y = "%{airline#util#wrap(airline#extensions#branch#get_head(),0)}"
+let g:airline_section_b = ""
+let g:airline_section_y = "%{airline#util#wrap(airline#extensions#branch#get_head(),0)}"
+let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
