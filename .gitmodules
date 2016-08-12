@@ -70,3 +70,9 @@
 [submodule "tomorrow-theme"]
 	path = tomorrow-theme
 	url = https://github.com/chriskempson/tomorrow-theme.git
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = https://github.com/briancollins/vim-jst.git
+[submodule "bundle/vim-eco"]
+	path = bundle/vim-eco
+	url = https://github.com/AndrewRadev/vim-eco.git
