@@ -11,7 +11,7 @@ let g:airline_right_sep = ""
 let g:airline_right_alt_sep = ""
 let g:airline_branch_prefix = ""
 let g:airline_readonly_symbol = ""
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'wombat'
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -30,7 +30,7 @@ let g:airline#extensions#whitespace#checks = ['indent']
 let airline#extensions#hunks#non_zero_only = 1
 
 let g:airline_section_b = ""
-let g:airline_section_y = "%{airline#util#wrap(airline#extensions#branch#get_head(),0)}"
+let g:airline_section_y = "" 
 let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
 
 let g:go_highlight_functions = 1
