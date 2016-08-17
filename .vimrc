@@ -2,6 +2,9 @@ execute pathogen#infect()
 highlight clear SignColumn
 highlight SpellBad gui=none
 
+" So airline doesn't sit and wait for other things to happen. So annoying.
+set ttimeoutlen=50
+
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 
@@ -92,7 +95,12 @@ let g:airline_symbols.space = "\ua0"
 
 colorscheme solarized
 
-let &colorcolumn="80,".join(range(120,999),",")
+highlight Cursorline cterm=bold ctermbg=233
+highlight ColorColumn ctermbg=232
+set colorcolumn=80
+
+" let colorcolumn=23
+" let &colorcolumn="80,".join(range(120,999),",")
 
 " backup related stuff
 set autowrite
