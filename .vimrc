@@ -35,6 +35,7 @@ let airline#extensions#hunks#non_zero_only = 1
 let g:airline_section_b = ""
 let g:airline_section_y = "" 
 let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
+" let g:airline_section_z = "" 
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -66,7 +67,7 @@ augroup END
 autocmd FileType ruby autocmd BufWritePre <buffer> %s/\s\+$//e
 
 set nofoldenable
-" set number
+set scrolloff=15
 set textwidth=80
 set tabstop=2
 set shiftwidth=2
@@ -74,7 +75,7 @@ set backspace=indent,eol,start
 set expandtab
 set spell
 set nowrap
-set number
+" set number
 set cursorline
 
 set nocompatible
@@ -93,7 +94,7 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.space = "\ua0"
 
-colorscheme solarized
+colorscheme Tomorrow-Night-Bright 
 
 highlight Cursorline cterm=bold ctermbg=233
 highlight ColorColumn ctermbg=232
