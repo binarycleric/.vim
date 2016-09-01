@@ -61,7 +61,7 @@
 [submodule "bundle/swift.vim"]
 	path = bundle/swift.vim
 	url = https://github.com/keith/swift.vim.git
-[submodule "Hack"]
+[submodule "support/Hack"]
 	path = support/Hack
 	url = https://github.com/chrissimpkins/Hack.git
 [submodule "bundle/vim-toml"]
@@ -70,7 +70,7 @@
 [submodule "bundle/vim-pug"]
 	path = bundle/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
-[submodule "tomorrow-theme"]
+[submodule "support/tomorrow-theme"]
 	path = support/tomorrow-theme
 	url = https://github.com/chriskempson/tomorrow-theme.git
 [submodule "bundle/vim-jst"]
