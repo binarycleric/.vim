@@ -1,6 +1,4 @@
 execute pathogen#infect()
-highlight clear SignColumn
-highlight SpellBad gui=none
 
 " So airline doesn't sit and wait for other things to happen. So annoying.
 set ttimeoutlen=50
@@ -75,7 +73,7 @@ set backspace=indent,eol,start
 set expandtab
 set spell
 set nowrap
-" set number
+set number
 set cursorline
 
 set nocompatible
@@ -96,8 +94,11 @@ let g:airline_symbols.space = "\ua0"
 
 colorscheme Tomorrow-Night-Bright 
 
+highlight clear SpellBad
+highlight SpellBad cterm=underline
 highlight Cursorline cterm=bold ctermbg=233
 highlight ColorColumn ctermbg=232
+
 set colorcolumn=80
 
 " let colorcolumn=23
