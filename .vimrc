@@ -12,7 +12,7 @@ let g:airline_right_sep = ""
 let g:airline_right_alt_sep = ""
 let g:airline_branch_prefix = ""
 let g:airline_readonly_symbol = ""
-let g:airline_theme = 'wombat'
+let g:airline_theme = 'solarized'
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -32,8 +32,8 @@ let airline#extensions#hunks#non_zero_only = 1
 
 let g:airline_section_b = ""
 let g:airline_section_y = "" 
-let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
-" let g:airline_section_z = "" 
+" let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
+let g:airline_section_z = "" 
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -84,20 +84,19 @@ filetype plugin indent on " required!
 set laststatus=2
 set visualbell t_vb=
 
-set background=dark
 syntax on
+set background=dark
+colorscheme solarized
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
 
-colorscheme Tomorrow-Night-Bright 
-
 highlight clear SpellBad
 highlight SpellBad cterm=underline
-highlight Cursorline cterm=bold ctermbg=233
-highlight ColorColumn ctermbg=232
+" highlight Cursorline cterm=bold ctermbg=233
+" highlight ColorColumn ctermbg=232
 
 set colorcolumn=80
 
