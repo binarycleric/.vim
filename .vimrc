@@ -12,7 +12,7 @@ let g:airline_right_sep = ""
 let g:airline_right_alt_sep = ""
 let g:airline_branch_prefix = ""
 let g:airline_readonly_symbol = ""
-let g:airline_theme = 'solarized'
+" let g:airline_theme = 'solarized'
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -32,8 +32,8 @@ let airline#extensions#hunks#non_zero_only = 1
 
 let g:airline_section_b = ""
 let g:airline_section_y = "" 
-" let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
-let g:airline_section_z = "" 
+let g:airline_section_z = airline#section#create(['linenr', 'maxlinenr'])
+" let g:airline_section_z = ""
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -52,7 +52,7 @@ let g:rbpt_colorpairs = [
   \ [ '6',  '#2aa198'],
   \ [ '4',  '#268bd2'],
   \ ]
- 
+
 " Enable rainbow parentheses for all buffers
 augroup rainbow_parentheses
   au!
@@ -74,7 +74,6 @@ set expandtab
 set spell
 set nowrap
 set number
-set cursorline
 
 set nocompatible
 filetype off
@@ -86,7 +85,7 @@ set visualbell t_vb=
 
 syntax on
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -95,10 +94,8 @@ let g:airline_symbols.space = "\ua0"
 
 highlight clear SpellBad
 highlight SpellBad cterm=underline
-" highlight Cursorline cterm=bold ctermbg=233
-" highlight ColorColumn ctermbg=232
-
-set colorcolumn=80
+highlight ColorColumn ctermbg=232
+" set colorcolumn=80
 
 " let colorcolumn=23
 " let &colorcolumn="80,".join(range(120,999),",")
