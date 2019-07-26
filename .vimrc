@@ -45,6 +45,13 @@ highlight clear SpellBad
 highlight SpellBad cterm=underline
 highlight clear CursorLine
 
+if has("gui_running")
+  colorscheme aurora
+  set guioptions=
+  set guifont=FiraCode-Retina:h14
+  autocmd VimLeave * macaction terminate:
+endif
+
 " backup related stuff
 set autowrite
 set nobackup
