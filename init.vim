@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 let g:bufferline_echo = 0
 
+let g:airline_extensions = []
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -29,8 +30,9 @@ set expandtab
 set spell
 set nowrap
 set number
-set cursorline
+" set cursorline
 set nocompatible
+set termguicolors
 
 filetype off
 filetype plugin indent on " required!
@@ -45,8 +47,9 @@ highlight clear SpellBad
 highlight SpellBad cterm=underline
 highlight clear CursorLine
 
+colorscheme tender
+
 if has("gui_running")
-  colorscheme aurora
   set guioptions=
   set guifont=FiraCode-Retina:h14
   autocmd VimLeave * macaction terminate:
