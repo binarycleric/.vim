@@ -68,7 +68,11 @@ call plug#begin()
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
+Plug 'mileszs/ack.vim'
+
+Plug 'elzr/vim-json'
 
 Plug 'guns/vim-clojure-static'
 Plug 'guns/vim-clojure-highlight'
