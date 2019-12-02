@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 let g:bufferline_echo = 0
 
 let g:airline_extensions = []
@@ -48,7 +46,7 @@ highlight clear SpellBad
 highlight SpellBad cterm=underline
 highlight clear CursorLine
 
-colorscheme tender
+" colorscheme tender
 
 if has("gui_running")
   set guioptions=
@@ -58,11 +56,30 @@ endif
 
 " backup related stuff
 set autowrite
-set nobackup
 
-" backup to ~/.tmp
 set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=/tmp//
+set directory=/tmp//
+set undodir=/tmp//
 set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+
+call plug#begin()
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-clojure-highlight'
+
+Plug 'fatih/vim-go'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-bundler'
+
+Plug 'rust-lang/rust.vim'
+
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'cespare/vim-toml'
+
+call plug#end()
