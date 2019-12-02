@@ -33,6 +33,7 @@ set number
 " set cursorline
 set nocompatible
 set termguicolors
+set rtp+=/usr/local/opt/fzf
 
 filetype off
 filetype plugin indent on " required!
