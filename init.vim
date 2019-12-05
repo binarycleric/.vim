@@ -28,10 +28,11 @@ set expandtab
 set spell
 set nowrap
 set number
-" set cursorline
 set nocompatible
 set termguicolors
 set rtp+=/usr/local/opt/fzf
+
+set cursorline
 
 filetype off
 filetype plugin indent on " required!
@@ -40,7 +41,6 @@ set laststatus=2
 set visualbell t_vb=
 
 syntax on
-set background=dark
 
 highlight clear SpellBad
 highlight SpellBad cterm=underline
@@ -66,6 +66,7 @@ set writebackup
 
 call plug#begin()
 
+Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
